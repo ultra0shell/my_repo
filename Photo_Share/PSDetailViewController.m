@@ -22,6 +22,7 @@
 -(void)loadPage:(NSInteger)pageIndex;
 -(void)removePage:(NSInteger)pageIndex;
 -(void)loadVisiblePages;
+
 @end
 
 @implementation PSDetailViewController

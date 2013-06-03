@@ -179,7 +179,6 @@
 		7015EF9616F8C2470055CB5F /* six.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7015EF8F16F8C2470055CB5F /* six.jpg */; };
 		7015EF9716F8C2470055CB5F /* three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7015EF9016F8C2470055CB5F /* three.jpg */; };
 		7015EF9816F8C2470055CB5F /* two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7015EF9116F8C2470055CB5F /* two.jpg */; };
-		701909F8173917D60054369C /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701909F7173917D60054369C /* PSViewController.m */; };
 		701909FC173926840054369C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701909FB173926840054369C /* FacebookSDK.framework */; };
 		701909FE173927000054369C /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 701909FD173927000054369C /* FacebookSDKResources.bundle */; };
 		70190A00173927C70054369C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 701909FF173927C70054369C /* libsqlite3.dylib */; };
@@ -207,6 +206,12 @@
 		702992C916EE24280047D9CC /* PSAssetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702992C716EE24240047D9CC /* PSAssetsController.m */; };
 		702992CF16EE3A660047D9CC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702992CE16EE3A650047D9CC /* AssetsLibrary.framework */; };
 		702992D116EE3A6E0047D9CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702992D016EE3A6E0047D9CC /* QuartzCore.framework */; };
+		702ED2CD175CB8DA00E6488C /* PSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702ED2CB175CB8D900E6488C /* PSLoginViewController.m */; };
+		702ED2CE175CB8DA00E6488C /* PSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702ED2CC175CB8D900E6488C /* PSLoginViewController.xib */; };
+		702ED2D3175CC13D00E6488C /* login-button-small-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 702ED2CF175CC13D00E6488C /* login-button-small-pressed.png */; };
+		702ED2D4175CC13D00E6488C /* login-button-small-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 702ED2D0175CC13D00E6488C /* login-button-small-pressed@2x.png */; };
+		702ED2D5175CC13D00E6488C /* login-button-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 702ED2D1175CC13D00E6488C /* login-button-small.png */; };
+		702ED2D6175CC13D00E6488C /* login-button-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 702ED2D2175CC13D00E6488C /* login-button-small@2x.png */; };
 		704059BC16F72B5F00B7814F /* PSCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 704059BB16F72B5F00B7814F /* PSCollectionCell.m */; };
 		707513E616F36B300033A4CC /* PSAlbumLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 707513E516F36B300033A4CC /* PSAlbumLayout.m */; };
 		708E92B117144D34006E2F9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E92B017144D34006E2F9B /* CoreLocation.framework */; };
@@ -392,8 +397,6 @@
 		7015EF8F16F8C2470055CB5F /* six.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = six.jpg; sourceTree = "<group>"; };
 		7015EF9016F8C2470055CB5F /* three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = three.jpg; sourceTree = "<group>"; };
 		7015EF9116F8C2470055CB5F /* two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = two.jpg; sourceTree = "<group>"; };
-		701909F6173917D60054369C /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
-		701909F7173917D60054369C /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		701909FB173926840054369C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		701909FD173927000054369C /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		701909FF173927C70054369C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -431,6 +434,13 @@
 		702992C716EE24240047D9CC /* PSAssetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAssetsController.m; sourceTree = "<group>"; };
 		702992CE16EE3A650047D9CC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		702992D016EE3A6E0047D9CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		702ED2CA175CB8D900E6488C /* PSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginViewController.h; sourceTree = "<group>"; };
+		702ED2CB175CB8D900E6488C /* PSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginViewController.m; sourceTree = "<group>"; };
+		702ED2CC175CB8D900E6488C /* PSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSLoginViewController.xib; path = Photo_Share/PSLoginViewController.xib; sourceTree = "<group>"; };
+		702ED2CF175CC13D00E6488C /* login-button-small-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small-pressed.png"; sourceTree = "<group>"; };
+		702ED2D0175CC13D00E6488C /* login-button-small-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small-pressed@2x.png"; sourceTree = "<group>"; };
+		702ED2D1175CC13D00E6488C /* login-button-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small.png"; sourceTree = "<group>"; };
+		702ED2D2175CC13D00E6488C /* login-button-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small@2x.png"; sourceTree = "<group>"; };
 		704059BA16F72B5F00B7814F /* PSCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSCollectionCell.h; path = Photo_Share/PSCollectionCell.h; sourceTree = "<group>"; };
 		704059BB16F72B5F00B7814F /* PSCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSCollectionCell.m; path = Photo_Share/PSCollectionCell.m; sourceTree = "<group>"; };
 		707513E416F36B300033A4CC /* PSAlbumLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSAlbumLayout.h; path = Photo_Share/PSAlbumLayout.h; sourceTree = "<group>"; };
@@ -665,13 +675,6 @@
 		7029927E16EE0FD60047D9CC = {
 			isa = PBXGroup;
 			children = (
-				70190A07173928BD0054369C /* AdSupport.framework */,
-				70190A05173928530054369C /* Accounts.framework */,
-				70190A03173928120054369C /* Social.framework */,
-				70190A01173927E90054369C /* libz.dylib */,
-				701909FF173927C70054369C /* libsqlite3.dylib */,
-				701909F6173917D60054369C /* PSViewController.h */,
-				701909F7173917D60054369C /* PSViewController.m */,
 				708EEDFE16F1F6BB00220F46 /* View */,
 				708EEDFA16F1E67600220F46 /* collectionViewLayout */,
 				702992CB16EE2B7B0047D9CC /* Nibs */,
@@ -692,6 +695,11 @@
 		7029928916EE0FD60047D9CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70190A07173928BD0054369C /* AdSupport.framework */,
+				70190A05173928530054369C /* Accounts.framework */,
+				70190A03173928120054369C /* Social.framework */,
+				70190A01173927E90054369C /* libz.dylib */,
+				701909FF173927C70054369C /* libsqlite3.dylib */,
 				701909FB173926840054369C /* FacebookSDK.framework */,
 				708E92BA17144D89006E2F9B /* MobileCoreServices.framework */,
 				708E92B817144D6D006E2F9B /* StoreKit.framework */,
@@ -717,6 +725,8 @@
 			children = (
 				7029929916EE0FD70047D9CC /* PSAppDelegate.h */,
 				7029929A16EE0FD70047D9CC /* PSAppDelegate.m */,
+				702ED2CA175CB8D900E6488C /* PSLoginViewController.h */,
+				702ED2CB175CB8D900E6488C /* PSLoginViewController.m */,
 				702992C116EE23B30047D9CC /* PSAlbumsCollectionController.h */,
 				702992C216EE23B30047D9CC /* PSAlbumsCollectionController.m */,
 				702992C616EE24220047D9CC /* PSAssetsController.h */,
@@ -744,6 +754,10 @@
 				7029929816EE0FD70047D9CC /* Photo_Share-Prefix.pch */,
 				7029929C16EE0FD70047D9CC /* Default.png */,
 				7029929E16EE0FD70047D9CC /* Default@2x.png */,
+				702ED2CF175CC13D00E6488C /* login-button-small-pressed.png */,
+				702ED2D0175CC13D00E6488C /* login-button-small-pressed@2x.png */,
+				702ED2D1175CC13D00E6488C /* login-button-small.png */,
+				702ED2D2175CC13D00E6488C /* login-button-small@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -751,6 +765,7 @@
 		702992CB16EE2B7B0047D9CC /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				702ED2CC175CB8D900E6488C /* PSLoginViewController.xib */,
 				70BE9F8716FB4C3500511BA8 /* PSDetailViewController.xib */,
 				702992BE16EE22680047D9CC /* PSUserSettingsController.xib */,
 				702992B916EE1B980047D9CC /* PSRequestsTableController.xib */,
@@ -782,9 +797,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7029928616EE0FD60047D9CC /* Photo_Share */ = {
+		7029928616EE0FD60047D9CC /* PhotoSwipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 702992AA16EE0FD70047D9CC /* Build configuration list for PBXNativeTarget "Photo_Share" */;
+			buildConfigurationList = 702992AA16EE0FD70047D9CC /* Build configuration list for PBXNativeTarget "PhotoSwipe" */;
 			buildPhases = (
 				7029928316EE0FD60047D9CC /* Sources */,
 				7029928416EE0FD60047D9CC /* Frameworks */,
@@ -794,7 +809,7 @@
 			);
 			dependencies = (
 			);
-			name = Photo_Share;
+			name = PhotoSwipe;
 			productName = Photo_Share;
 			productReference = 7029928716EE0FD60047D9CC /* Photo_Share.app */;
 			productType = "com.apple.product-type.application";
@@ -821,7 +836,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7029928616EE0FD60047D9CC /* Photo_Share */,
+				7029928616EE0FD60047D9CC /* PhotoSwipe */,
 			);
 		};
 /* End PBXProject section */
@@ -1009,6 +1024,11 @@
 				7015EF9816F8C2470055CB5F /* two.jpg in Resources */,
 				70BE9F8916FB4C3600511BA8 /* PSDetailViewController.xib in Resources */,
 				701909FE173927000054369C /* FacebookSDKResources.bundle in Resources */,
+				702ED2CE175CB8DA00E6488C /* PSLoginViewController.xib in Resources */,
+				702ED2D3175CC13D00E6488C /* login-button-small-pressed.png in Resources */,
+				702ED2D4175CC13D00E6488C /* login-button-small-pressed@2x.png in Resources */,
+				702ED2D5175CC13D00E6488C /* login-button-small.png in Resources */,
+				702ED2D6175CC13D00E6488C /* login-button-small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,7 +1050,7 @@
 				704059BC16F72B5F00B7814F /* PSCollectionCell.m in Sources */,
 				7022E5F716F9DEB600E732DC /* PSAssetsCell.m in Sources */,
 				70BE9F8816FB4C3600511BA8 /* PSDetailViewController.m in Sources */,
-				701909F8173917D60054369C /* PSViewController.m in Sources */,
+				702ED2CD175CB8DA00E6488C /* PSLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1144,7 +1164,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		702992AA16EE0FD70047D9CC /* Build configuration list for PBXNativeTarget "Photo_Share" */ = {
+		702992AA16EE0FD70047D9CC /* Build configuration list for PBXNativeTarget "PhotoSwipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				702992AB16EE0FD70047D9CC /* Debug */,

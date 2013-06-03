@@ -8,10 +8,12 @@
 #import "PSAssetsController.h"
 #import <UIKit/UIKit.h>
 #import "PSAlbumsCollectionController.h"
+#import "PSUserSettingsController.h"
 
 
 @interface PSAppDelegate : UIResponder <UIApplicationDelegate>
 
 -(PSAssetsController*)assetsController;
 -(PSAlbumsCollectionController*)albumsController;
+-(PSUserSettingsController*)settingsController;
 @end

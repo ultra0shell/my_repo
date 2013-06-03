@@ -8,11 +8,13 @@
 
 #import "PSUserSettingsController.h"
 #import <Parse/Parse.h>
+#import "PSLoginViewController.h"
 
 @interface PSUserSettingsController ()
 {
     UIImage *testImage;
     NSData *imageData;
+    PSLoginViewController *loginVC;
 }
 @end
 
@@ -33,10 +35,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    testImage = [UIImage imageNamed:@"avatar3.png"];
-    imageData = UIImageJPEGRepresentation(testImage, 1);
+    loginVC = [[PSLoginViewController alloc]initWithNibName:@"PSLoginViewController" bundle:nil];
+
+
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
     
-    [self uploadImage];
+    if (![PFUser currentUser])
+    {
+        [self presentViewController:loginVC animated:YES completion:nil];
+    }
 }
 
 -(void)uploadImage
@@ -54,7 +65,7 @@
 - (IBAction)logOutButtonPressed:(UIButton *)sender
 {
     [PFUser logOut];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    self.tabBarController.selectedIndex = 0;
 }
 
 

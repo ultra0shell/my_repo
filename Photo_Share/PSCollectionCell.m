@@ -26,8 +26,8 @@
 //        _albumImage.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         
         [self.contentView addSubview:_albumImage];
-        self.contentView.layer.borderWidth = 3;
-        self.contentView.layer.borderColor = [UIColor grayColor].CGColor;
+        self.contentView.layer.cornerRadius = 10;
+ 
 //        self.contentView.layer.shadowOffset  = CGSizeMake(5, 10);
 //        self.contentView.layer.shadowColor   = [[UIColor blackColor] CGColor];
 //        self.contentView.layer.shadowRadius  = 2;

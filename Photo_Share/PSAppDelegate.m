@@ -22,7 +22,7 @@
 
 #import <Parse/Parse.h>
 
-#import "PSViewController.h"
+#import "PSLoginViewController.h"
 
 #import <FacebookSDK/FacebookSDK.h>
 
@@ -32,7 +32,8 @@
     UIWindow *window;
     PSAssetsController *assetsController;
     PSAlbumsCollectionController *albumsController;
-    PSViewController *loginController;
+    PSLoginViewController *loginController;
+    PSUserSettingsController     *userSettings;
 }
 @end
 
@@ -55,13 +56,14 @@
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
+    
     [Parse setApplicationId:@"czJEyuNkNri3ILsLbImDIWA6QeWEW6UGL0brgzjz" clientKey:@"iMV0K2kikp7G96OQma4QbPQNWkuyOJ42USpO5Uc3"];
     [PFFacebookUtils initializeFacebook];
     
     PSAlbumLayout *albumLayout = [[[PSAlbumLayout alloc]init]autorelease];
     
     albumsController   = [[[PSAlbumsCollectionController alloc]initWithCollectionViewLayout:albumLayout]autorelease];
-    loginController = [[PSViewController alloc]init];
+    loginController = [[PSLoginViewController alloc]initWithNibName:@"PSLoginViewController" bundle:nil];
     
     
     UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
@@ -76,14 +78,14 @@
     
     PSRequestsTableController    *requestsController = [[[PSRequestsTableController alloc]initWithNibName:@"PSRequestsTableController" bundle:nil]autorelease];
     
-    PSUserSettingsController     *userSettings       = [[[PSUserSettingsController alloc]initWithNibName:@"PSUserSettingsController" bundle:nil]autorelease];
+    userSettings  = [[PSUserSettingsController alloc]initWithNibName:@"PSUserSettingsController" bundle:nil];
     
-    UINavigationController       *navController      = [[[UINavigationController alloc]initWithRootViewController:albumsController]autorelease];
-    UIImage *navBarImage = [[UIImage imageNamed:@"menubar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 15, 5, 15)];
+    UINavigationController       *navController      = [[UINavigationController alloc]initWithRootViewController:albumsController];
+    UIImage *navBarImage = [UIImage imageNamed:@"menubar.png"];
     
     [[UINavigationBar appearance] setBackgroundImage:navBarImage forBarMetrics:UIBarMetricsDefault];
     
-    NSArray *tabBarViews = [NSArray arrayWithObjects:navController,friendsController,requestsController,userSettings,loginController, nil];
+    NSArray *tabBarViews = [NSArray arrayWithObjects:navController,friendsController,requestsController,userSettings, nil];
     
     UITabBarController *tabController = [[UITabBarController alloc]init];
     [tabController setViewControllers:tabBarViews];
@@ -94,11 +96,13 @@
     
     [window makeKeyAndVisible];
     [tabController release];
+    
     return YES;
     
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
     return [PFFacebookUtils handleOpenURL:url];
 }
 
@@ -110,6 +114,11 @@
 -(PSAlbumsCollectionController*)albumsController
 {
     return albumsController;
+}
+
+-(PSUserSettingsController*)settingsController
+{
+    return userSettings;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
